@@ -1,0 +1,33 @@
+# --- Generales de Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Entornos Virtuales ---
+# El doble asterisco **/ busca estas carpetas en cualquier subdirectorio
+**/.venv/
+**/venv/
+env/
+
+# --- Variables de Entorno y Secretos ---
+.env
+.env.local
+
+# --- Configuraciones de Editor ---
+.vscode/
+.idea/
+
+# --- Archivos del Sistema Operativo ---
+.DS_Store
+Thumbs.db
+
+# --- Salidas Específicas del Proyecto METADATOS_MUSICA ---
+# Ignoramos la carpeta summary donde se guardan los JSON y reportes
+METADATOS_MUSICA/summary/
+# Por seguridad, ignoramos cualquier JSON en la raíz de ese script (excepto configuraciones)
+METADATOS_MUSICA/*.json
+
+# --- Salidas Específicas del Proyecto CONVERTIR_MUSICA_A_MP3 ---
+# Ignoramos la carpeta logs generada por audiomp3.py
+CONVERTIR_MUSICA_A_MP3/logs/

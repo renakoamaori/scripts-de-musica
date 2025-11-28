@@ -1,0 +1,4 @@
+mutagen
+tqdm
+dotenv
+google-genai
